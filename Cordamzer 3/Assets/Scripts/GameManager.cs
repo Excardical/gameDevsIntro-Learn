@@ -10,11 +10,6 @@ public class GameManager : MonoBehaviour
     private GameObject Characters;
 
     public static GameManager instance; 
-    private int _charIndex;
-    public int charIndex {
-        get { return _charIndex; }
-        set { _charIndex = value; }
-    }
 
     private void Awake() {
         if(instance == null) {
@@ -24,16 +19,4 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    // void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode) {
-
-    // }
-
-    // private void OnEnable() {
-    //     SceneManager.sceneLoaded += OnLevelFinishedLoading;
-    // }
-
-    // private void OnDisable() {
-    //     SceneManager.sceneLoaded -= OnLevelFinishedLoading;
-    // }
 }

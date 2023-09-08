@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEditor.SceneManagement;
+using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
 
-public class MainMenuController : MonoBehaviour
+public class GameplayUIController : MonoBehaviour
 {
-    public void startGame() {
+    public void restartGame() {
         SceneManager.LoadScene("Gameplay");
     }
 }
